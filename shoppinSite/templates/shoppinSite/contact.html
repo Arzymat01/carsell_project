@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ShOPeE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileViewCollapse">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="mobileViewCollapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"> <a href="./index.html" class="nav-link"> Главная </a></li>
+                    <li class="nav-item"> <a href="./about.html" class="nav-link"> О компании </a></li>
+                    <li class="nav-item"> <a href="./contact.html" class="nav-link"> Контакты </a></li>
+                    <li class="nav-item"> <a href="./skida.html" class="nav-link"> Скидки </a></li>
+                    <li class="nav-item"> <a href="./productsdescription.html" class="nav-link"> Наши продукты </a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button"
+                            data-bs-toggle="dropdown">Коллекци</a>
+                        <ul class="dropdown-menu ">
+                            <li> <a href="#" class="dropdown-item">Теплые Куртки</a></li>
+                            <li> <a href="#" class="dropdown-item">Зимние</a></li>
+                            <li> <a href="#" class="dropdown-item">Кожаные</a></li>
+                            <li> <a href="#" class="dropdown-item">Nike Air Max</a></li>
+                            <li> <a href="#" class="dropdown-item">Adidas Superstar</a></li>
+                            <li> <a href="#" class="dropdown-item">Nike Air Force</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" name="searchform" placeholder="Найти..">
+                    <button class="btn btn-info" type="button">Найти</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-center text-light bg-dark mx-3 rounded-3  ">Регистрации </h2>
+        <form class="was-validated mx-5 rounded-3">
+            <div class="my-3 input-group">
+                <span for="name" class="input-group-text"> ФИО: </span>
+                <input type="text" name="name" id="name" class="form-control form-control" placeholder="Имя" required>
+                <input type="text" name="surname" id="surname" class="form-control form-control" placeholder="Фамилия"
+                    required>
+
+                <div class="valid-feedback">ФИО принят!</div>
+                <div class="invalid-feedback">Напишите фамилию!</div>
+            </div>
+
+            <div class="my-3">
+                <label for="selectcountry" class="form-label">Пол:</label>
+                <select class="form-select">
+                    <option>Мужчина</option>
+                    <option>Женщина</option>
+
+                </select>
+
+
+            </div>
+
+
+            <div class="my-3">
+                <label for="selectcountry" class="form-label">Выберите регион:</label>
+                <select class="form-select">
+                    <option>Чуй</option>
+                    <option>Ысык-Кол</option>
+                    <option>Жалал-Абад</option>
+                    <option>Нарын</option>
+                    <option>Талас</option>
+                    <option>Баткен</option>
+                    <option>Ош</option>
+
+                </select>
+
+            </div>
+
+            <div class="my-3 form-floating">
+                <label for="email" class="form-label"> Почта: </label>
+                <input type="email" name="email" id="email" class="form-control" required>
+
+                <div class="valid-feedback">Почта принята! </div>
+                <div class="invalid-feedback">Напишите почту!</div>
+            </div>
+
+            <div class="my-3">
+
+                <input type="password" name="pswd" id="pswd" class="form-control form-control-lg" required>
+                <label for="pswd" class="form-label"> Пароль: </label>
+
+                <div class="valid-feedback">Пароль принят! </div>
+                <div class="invalid-feedback">Напишите пароль!</div>
+            </div>
+
+            <div class="my-3">
+                <label for="pswdrepeat" class="form-label"> Повторите Пароль: </label>
+                <input type="password" name="pswdrepeat" id="pswdrepeat" class="form-control" required>
+
+                <div class="valid-feedback">Повторно пароль принят! </div>
+                <div class="invalid-feedback">Напишите повторный пароль!</div>
+            </div>
+
+            <div class="my-3 form-check form-switch">
+                <label for="tumbler" class="form-check-label">Запомнить меня </label>
+                <input type="checkbox" name="tumbler" id="tumbler" class="form-check-input" checked>
+            </div>
+
+
+
+            <button class="btn btn-info">Зарегистрироваться</button>
+        </form>
+    </div>
+    <div class="container mt-3 ">
+        <h1 class="text-center text-primary "> Популярные вопросы </h1>
+        <div id="accordeon ">
+
+            <div class="card bg-info">
+                <div class="card-header">
+                    <a href="#content1" class="btn" data-bs-toggle="collapse"> Какой ваш Адрес?</a>
+                </div>
+                <div id="content1" class="collapse show" data-bs-parent="#accordeon">
+                    <div class="card-body text-light">
+                        <p> Лев Толстой 213/12 a, телефон: 0779858216</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-info ">
+                <div class="card-header">
+                    <a href="#content2" class="btn" data-bs-toggle="collapse"> Описание товара</a>
+                </div>
+                <div id="content2" class="collapse" data-bs-parent="#accordeon">
+                    <div class="card-body  text-light">
+                        <p>
+                        <p>ВНЕШНЯЯ ТКАНЬ Arctic-Tech (195 г/м2): 85% полиэстер /15% хлопок,</p>
+                        <p>Скидки защитной обработкой DWR (Durable Water Repellent)</p>Придающей водостойкость и
+                        устойчивость к мокрой грязи
+                        <p>ПОДКЛАДКА 55г/м2, нейлон, обработанный водоотталкивающим покрытием</p>
+                        УТЕПЛИТЕЛЬ Пух белой утки FP 625 +
+                        Узкий крой</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card bg-info">
+                <div class="card-header ">
+                    <a href="#content3" class="btn" data-bs-toggle="collapse"> Сколько стоит ваши товары? </a>
+                </div>
+                <div id="content3" class="collapse" data-bs-parent="#accordeon">
+                    <div class="card-body text-light">
+                        <p>Куртка, 3XL (EU 46), 4XL (EU 48), 5XL (EU 50), цвет - Черный
+
+                        <p> 9 599 KGS</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container  my-4  ">
+        <div class="justify-content-sm-center ">
+            <a class="btn btn-primary" style="background-color: #ac2bac;"
+                href="https://www.youtube.com/channel/UCxWibleqOswc-rMZMtg6d6g" role="button"><i
+                    class="fab fa-instagram"></i></a>
+            <a class="btn btn-primary" style="background-color: #25d366;" href="https://wa.me/+996779858216"
+                role="button"><i class="fab fa-whatsapp"></i></a>
+            <a class="btn btn-primary" style="background-color: #ed302f;"
+                href="https://www.youtube.com/channel/UCxWibleqOswc-rMZMtg6d6g" role="button"><i
+                    class="fab fa-youtube"></i></a>
+            <a class="btn btn-primary" style="background-color: #13b8eb;" href="https://t.me/arzymatarkabaev1"
+                target="blank" role="button"><i class="fab fa-telegram"></i></a>
+            <a class="btn btn-primary" style="background-color: #3b5998;"
+                href="https://www.facebook.com/profile.php?id=100012899505781" role="button"><i
+                    class="fab fa-facebook-f"></i></a>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
